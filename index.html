@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.2">
-<meta name="referrer" content="same-origin">
-
+<!-- <meta name="referrer" content="same-origin">
+ -->
     <meta charset="UTF-8">
 <!--   <title>Contact Us123</title> -->
   <style>
@@ -103,8 +103,9 @@ axios(config)
 //a9c98447db94bba4b3a5938add71*/
 
 let myHeaders = new Headers();
-myHeaders.append("Access-Control-Allow-Origin", "https://cloud.yellow.ai");
+//myHeaders.append("Access-Control-Allow-Origin", "https://cloud.yellow.ai");
 myHeaders.append("Accept", "application/json");
+myHeaders.append("origin", "https://cloud.yellow.ai");
 myHeaders.append("Content-Type", "application/json");
 myHeaders.append("Access-Control-Allow-Headers", "Authorization,Content-Type,x-api-key");
 myHeaders.append("Access-Control-Allow-Methods", "POST");
