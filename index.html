@@ -105,9 +105,12 @@ axios(config)
 let myHeaders = new Headers();
 myHeaders.append("Access-Control-Allow-Origin", "https://cloud.yellow.ai");
 myHeaders.append("Accept", "application/json");
+myHeaders.append("Connection", "keep-alive");
 myHeaders.append('x-auth-token', "442a2850bddf8273e585bb3885ec7f2c96b1e24af4ab56eefe0001fc5e86ef181UyQQShDuZFW5MPWcXSVY");
 myHeaders.append("Content-Type", "application/json");
-myHeaders.append("Access-Control-Allow-Headers", "Authorization,Content-Type,x-auth-token");
+myHeaders.append("Access-Control-Allow-Headers","Authorization,Content-Type,Accept,Origin,User-Agent,DNT,Cache-Control,X-Mx-ReqToken,Keep-Alive,X-Requested-With,If-Modified-Since,platform")
+//  "Authorization,Content-Type,x-auth-token");
+// Authorization,Content-Type,Accept,Origin,User-Agent,DNT,Cache-Control,X-Mx-ReqToken,Keep-Alive,X-Requested-With,If-Modified-Since,platform
 myHeaders.append("Access-Control-Allow-Methods", "POST");
 myHeaders.append("Access-Control-Allow-Credentials", "true");
 myHeaders.append("authority", "cloud.yellow.ai");
