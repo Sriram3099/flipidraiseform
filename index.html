@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.2">
-<meta name="referrer" content="same-origin">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 
     <meta charset="UTF-8">
 <!--   <title>Contact Us123</title> -->
@@ -149,7 +149,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://cloud.yellow.ai/integrations/
  </script>
 <body>
   <h1>Contact Us</h1>
-  <!-- <form> -->
+  <form>
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required>
   
@@ -172,6 +172,6 @@ fetch("https://cors-anywhere.herokuapp.com/https://cloud.yellow.ai/integrations/
   
     <!-- <input type="submit" value="Submit" onclick="finalsubmit()"> -->
     <button class="submit" type="button" onclick="finalsubmit()">submit</button>
-  <!-- </form> -->
+  </form>
 </body>
 </html>
