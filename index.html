@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.2">
-<meta name="referrer" content="strict-origin-when-cross-origin">
-
+<!-- <meta name="referrer" content="strict-origin-when-cross-origin">
+ -->
     <meta charset="UTF-8">
 <!--   <title>Contact Us123</title> -->
   <style>
@@ -103,7 +103,7 @@ axios(config)
 //a9c98447db94bba4b3a5938add71*/
 
 let myHeaders = new Headers();
-myHeaders.append("Access-Control-Allow-Origin", "https://cloud.yellow.ai");
+/*myHeaders.append("Access-Control-Allow-Origin", "https://cloud.yellow.ai");
 myHeaders.append("Accept", "application/json");
 myHeaders.append("Connection", "keep-alive");
 myHeaders.append('x-auth-token', "442a2850bddf8273e585bb3885ec7f2c96b1e24af4ab56eefe0001fc5e86ef181UyQQShDuZFW5MPWcXSVY");
@@ -121,9 +121,29 @@ myHeaders.append("sec-fetch-site", "cross-site");
 //myHeaders.append("vary", "cloud.yellow.ai");
 myHeaders.append("Authorization", "a9c98444d590bba8b5a7908bd075");
 myHeaders.append("x-api-key", "pKghyLxVVL1__LA1iqFKvPvoDqS8jrfCDOfeKwM4");
-
+*/
 //let urlencoded = new URLSearchParams();
 //urlencoded.append("message", "ram");
+
+///new check
+myHeaders.append("Accept", "application/json");
+myHeaders.append("Accept-Language", "en-GB,en-US;q=0.9,en;q=0.8");
+myHeaders.append("Access-Control-Allow-Origin", "*");
+myHeaders.append("Authorization", "a9c98444d590bba8b5a7908bd075");
+myHeaders.append("Connection", "keep-alive");
+myHeaders.append("Content-Type", "application/json");
+myHeaders.append("Origin", "https://sriram3099.github.io");
+myHeaders.append("Referer", "https://sriram3099.github.io");
+myHeaders.append("Sec-Fetch-Dest", "empty");
+myHeaders.append("Sec-Fetch-Mode", "cors");
+myHeaders.append("Sec-Fetch-Site", "cross-site");
+myHeaders.append("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36");
+myHeaders.append("sec-ch-ua", "\"Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99\"");
+myHeaders.append("sec-ch-ua-mobile", "?0");
+myHeaders.append("sec-ch-ua-platform", "\"macOS\"");
+myHeaders.append("x-api-key", "pKghyLxVVL1__LA1iqFKvPvoDqS8jrfCDOfeKwM4");
+////new check
+
 
 let requestOptions = {
   method: 'POST',
